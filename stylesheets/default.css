@@ -1,0 +1,52 @@
+@font-face	{
+	font-family: Awake;
+	src:url('/Users/SabriH/Desktop/Fonts/Awake/Awake-Regular.otf');
+}
+@font-face	{
+	font-family: Awake;
+	src:url('/Users/SabriH/Desktop/Fonts/Awake/Awake-Bold.otf')
+}
+.body	{
+	font-family: Roboto Mono;
+	font-size: 1em;
+	color:#EEEEEE;
+	background-color: #222831;
+	text-align:center;
+	margin:auto;
+}
+.heading	{
+	font-weight:bold;
+	font-family: Roboto Mono;
+	font-size:2em;
+	text-align:center;
+}
+
+a:visited {
+	color:#393E46;
+}
+a:hover{
+	color:#00ADB5;
+}
+
+#image {
+	border-radius: 100%;
+	width:300px;
+	height:300px;
+	padding:0px;
+	border: 2px solid #EEEEEE;
+
+}
+
+
+.li {
+	display:inline;
+	margin:auto;
+	list-style-type: none;
+	padding:10px;
+	
+}
+#footer	{
+	margin-left: 5px;
+	display:inline;
+}
+
