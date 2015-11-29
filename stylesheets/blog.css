@@ -1,0 +1,40 @@
+#aside {
+	float:right;
+	font-weight:small;
+	margin-right: 5px;
+}
+.liblog {
+	display:block;
+	list-style-type: none;
+	text-align:center;
+}
+.main {
+	float:left;
+	font-weight: normal;
+	padding:10px;
+	margin-left: 50px;
+}
+#heading2	{
+	font-weight:bolder;
+}
+#hr {
+	border:solid;
+	height:2px;
+	background-color:#EEEEEE;
+	color:#222831;
+}
+#contact {
+	clear:both;
+	margin-left: 5px;
+}
+#bodyblog {
+	font-family: Roboto Mono;
+	font-size: 1em;
+	color:#EEEEEE;
+	background-color: #222831;
+}
+.bcenter {
+	text-align:center;
+	margin:5px
+	padding:5px;
+}
