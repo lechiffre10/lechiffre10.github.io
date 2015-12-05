@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/font-awesome/css/font-awesome.min.css">
+  <title>Arrays and Hashes</title>
+
+</head>
+<body id="bodyblog">
+  <nav>
+    <ul class="bcenter">
+      <li class="li"><a href="../index.html">Home</a></li>
+      <li class="li">About Me</li>
+      <li class="li">Projects</li>
+      <li class="li"><a href="index.html">Blog</a></li>
+      <li class="li">Contact</li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 class="bcenter">Week 4</h1>
+    <article>
+      <h2 class="bcenter">1.3:Arrays and Hashes</h2>
+      <a href="https://www.facebook.com/shelal"><i class="fa fa-facebook-square fa-2x"></i></a>
+      <a  href="https://twitter.com/SabrisJourney"><i class="fa fa-twitter-square fa-2x"></i></a>
+      <a  href="mailto:sabri.helal@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+      <hr>
+      <p> Can you explain the difference between Arrays and Hashes?<br>We're going to be discussing the difference between Arrays and Hashes, providing a few examples along the way and the use for each!We first need to establish the fact that both are collections used to store data and are very similar. Arrays, are indexed collections that can contain strings(text), integers and even other Arrays! They are indexed by integers, so for example, assuming you have an array that looks like this:<br><code class="code">array=["Hi",25,"name",[24,30]]</code><br> Here we say our Array contains strings, integers and even another Array. If you wanted to access the first item in the array we would do so by calling array[0](The index starts at 0). This is particularly helpful in the case of a grocery list program. Assuming you have ten items and you'd like to know the first item that you need to purchase you can do so with the example we used.<br>Let's move on and talk a bit about Hashes now. Hashes are similar to Arrays as they are collections used to store data as well, however they differentiate in structure. Hashes consist of a key/value pair ( as opposed to the integer indexation of an Array) and keys are unique in Hashes.Here's what a Hash looks like:<br><code class="code">hash={name:"Sabri",address:"1234 jasonbourne st"}</code><br> We clearly see the key(eg:name) and its value pair("Sabri"). The key has to be unique however we can have the same value several times. When we want to find the value of a specific key we do as such hash[:name] and that should return "Sabri" in this case.<br> Now we know what an Array is and what is Hash and their differences but why use one over the other ? That really depends on the nature of your program and what you are trying to accomplish. We know that both are collections and indexed differently but if you're trying to accomplish a certain task choosing one over the other can make things a little bit easier. For example, if you're building a collection of phone numbers of friends, using names as a key and returning the phone number as a value is a lot easier than an integer index. This is just one of the examples of uses of a Hash over an Array and it really depends!
+      
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+    </article>
+  </main>
+  <footer>
+    <p>Saturday December 5th, 2015</p>
+  </footer>
+</body>
+</html>
