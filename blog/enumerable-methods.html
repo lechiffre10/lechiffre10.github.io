@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/font-awesome/css/font-awesome.min.css">
+  <title>Enumerable#map</title>
+
+</head>
+<body id="bodyblog">
+  <nav>
+    <ul class="bcenter">
+      <li class="li"><a href="../index.html">Home</a></li>
+      <li class="li">About Me</li>
+      <li class="li">Projects</li>
+      <li class="li"><a href="index.html">Blog</a></li>
+      <li class="li">Contact</li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 class="bcenter">Week 5</h1>
+    <article>
+      <h2 class="bcenter">1.4:Enumerable#map</h2>
+      <a href="https://www.facebook.com/shelal"><i class="fa fa-facebook-square fa-2x"></i></a>
+      <a  href="https://twitter.com/SabrisJourney"><i class="fa fa-twitter-square fa-2x"></i></a>
+      <a  href="mailto:sabri.helal@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+      <hr>
+      <p> This week we'll be diving a little bit more into one of the methods in Ruby from the Enumerable module.I'm going to keep it fairly simple and hopefully you won't require a .map(first and last pun I promise). The method we'll be looking at is the map method (thus the terrible joke I made).So what does the map method do exactly?<br>
+      The map method takes an enumerable object(an Array or a Range) and iterates through each element passing a block once. It then returns a NEW Array(this means it's a non-destructive method because it returns a new Array). Before looking at an example of how it works exactly we can also apply a destructive method(modify the original array) by adding the ! symbol after map eg:<br><code class="code">array.map!{|i| p i}</code><br> By doing this it doesn't return a new Array it affects the original and returns it. What is the difference between the each method and the map method?<br>The each method will take a block and iterate through the array and do something with the block, but it still returns the original array. The map method will take a block, iterate through the array and return a new array.Here's an example:<br><code class="code"> y = [1,2,3].each {|x| x + 2}</code> will still return [1,2,3]<br> whereas<br>
+      <code class="code"> x=[1,2,3].map {|x| x+2}</code><br> will iterate through the array and pass the block returning a new array with as [2, 3, 4]. Another way of wording the map method is using the term collect. They both do the exact same thing. Hopefuly this wasn't too complicated to understand! See you next week! 
+
+
+
+        <!-- copy and paste as many sections as you want to add paragraphs -->
+      </article>
+    </main>
+    <footer>
+      <p>Saturday December 12th, 2015</p>
+    </footer>
+  </body>
+  </html>
