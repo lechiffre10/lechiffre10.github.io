@@ -45,8 +45,15 @@ a:hover{
 	padding:10px;
 	
 }
-#footer	{
+.footer	{
 	margin-left: 5px;
 	display:inline;
+}
+#about {
+	font-family: Roboto Mono;
+	font-size: 20px;
+	color:#EEEEEE;
+	background-color: #222831;
+	padding:25px;
 }
 
