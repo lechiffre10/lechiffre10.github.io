@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/font-awesome/css/font-awesome.min.css">
+  <title>Ruby classes</title>
+
+</head>
+<body id="bodyblog">
+  <nav>
+    <ul class="bcenter">
+      <li class="li"><a href="../index.html">Home</a></li>
+      <li class="li"><a href="../about.html">About Me</a></li>
+      <li class="li">Projects</li>
+      <li class="li"><a href="index.html">Blog</a></li>
+      <li class="li"><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 class="bcenter">Week 6</h1>
+    <article>
+      <h2 class="bcenter">1.5:Ruby Classes</h2>
+      <a href="https://www.facebook.com/shelal"><i class="fa fa-facebook-square fa-2x"></i></a>
+      <a  href="https://twitter.com/SabrisJourney"><i class="fa fa-twitter-square fa-2x"></i></a>
+      <a  href="mailto:sabri.helal@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+      <hr>
+      <p> This week we'll be discussing classes in Ruby. Following up on my promise last week, i'll do my best to avoid
+        any puns in this week's blog. So students, are you ready for class?...<br>The first thing to understand about classes is they act as blueprints when creating an object. In essence, when discussing classes, they will consist of attributes and behaviors of an object ( what is the object and what does it do?). Whenever we create a new instance of that class(we'll see how that works as well!) we call that Instantiation. In order to understand classes, we're going to be using the real world example of Items that you would purchase at an electronics store.<br>So how do we create a class? We do so like this:<code class="code"><br>class Items<br>def initialize(item_name,quantity)<br>@item_name = item_name<br>@quantity = quantity<br>end<br></code>Alright so let's explain what's happening here. When we instantiate a class of Items(create a new object) by doing for example item = Item.new("PS4",1) Ruby will look for the initialize method first( and every time you instantiate) and because we have pass these arguments which consist of item name and quantity we end up creating this object with those arguments. The use @ allows us to create what we call instance variables (as opposed to local variables). Instance variables allow us to use them on each instance of the class Items. When we define a method we'll see how that works as well. So we create a class Items and whenever we instantiate we pass an item name and a quantity as an argument.What if we wanted to print the items? We can do this by defining a method within our Items class.<code class="code"><br>def print<br> puts @item_name<br>puts @quantity<br>end</code><br> Now, when we call our method outside of our class by doing <code class="code">item.print</code> It should print "PS4" and 1. We can also use a local variable depending on our program, the use of the instance variable allows us to use that variable in different methods within our class. We can also make use of what we call getter and setter methods in Ruby. To avoid complicating things, i'll briefly explain what each does. A getter method allows us to return the value of a variable eg:<code class="code"><br>def item<br> @item_name<br>end<br></code>This just returns the value of item name. A setter method allows us to change the return value of a variable outside of the class. So for example if we wanted to change the quantity of items outside of the class we'd define a setter method as such:<code class="code"><br>def quantity=(set_quantity)<br>end</code><br>This allows us to overwrite the value of quantity outside of the class. I hope this served as a brief explanation using a real world example of the creation of a class, Instantiation, instance variables and different methods.There's a lot more to know and learn (eg:Inheritance through superclasses and subclasses) but we'll leave that for another time(without the puns hopefully!) See you next year!
+
+
+
+        <!-- copy and paste as many sections as you want to add paragraphs -->
+      </article>
+    </main>
+    <footer>
+      <p>Saturday December 26th, 2015</p>
+    </footer>
+  </body>
+  </html>
