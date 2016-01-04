@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/font-awesome/css/font-awesome.min.css">
+  <title>Ruby Hashes vs. JavaScript Objects</title>
+
+</head>
+<body id="bodyblog">
+  <nav>
+    <ul class="bcenter">
+      <li class="li"><a href="../index.html">Home</a></li>
+      <li class="li"><a href="../about.html">About Me</a></li>
+      <li class="li"><a href="../projects/index.html">Projects</a></li>
+      <li class="li"><a href="index.html">Blog</a></li>
+      <li class="li"><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 class="bcenter">Week 7</h1>
+    <article>
+      <h2 class="bcenter">1.6:Ruby Hashes vs. JavaScript Objects</h2>
+      <a href="https://www.facebook.com/shelal"><i class="fa fa-facebook-square fa-2x"></i></a>
+      <a  href="https://twitter.com/SabrisJourney"><i class="fa fa-twitter-square fa-2x"></i></a>
+      <a  href="mailto:sabri.helal@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+      <hr>
+      <p> Today we're going to be looking at Ruby hashes and Javascript objects.We'll be diving into differences and similiarties and as promised, no puns after the new year.In Ruby, we use a key value pair as a means of data structure and it looks like this:<br><code class="code"> athlete = {sport:"Basketball",age:31,name:"Lebron James"}</code><br> In Javascript its very similar however we start with the keyword var for variable and then we create an object with a property and value (similar to key value pair) and it looks like this:<br><code class="code"> var athlete ={sport: "Basketball",age: 31,name:"Lebron James"};</code> We notice they are very similar albeit slight syntax difference but one difference is that in Ruby a key be of any data type (strings,numbers,symbols,hashes) whereas in Javascript a property can only be a variable. In Javascript we can use dot notation or brackets to access the value of a property and they are different. If you want to access the sport value in ruby we would do:
+      <code class="code"> athlete[:sport]</code> and this would return "Basketball". In Javascript, we can access the sport property value by the dot notation as such <code class="code"> athlete.sport or athlete["sport"]</code> The problem with the dot notation is visible when you create a new variable that points to the value of sport (eg: var newSport= sport) if you then attempt to return the value by doing so <code class="code"> athlete.newSport</code> it should return as undefined. The reason is because the dot notation will explicitly look for a property with the name of newSport in the object and if it isn't available it will return undefined. We can correct that by using the bracket notation as athlete[newSport] and it should return "Basketball". We also have to use bracket notation for numbers as the dot notation does not work in that case. I hope this was a brief but instructive overview of the difference between ruby Hashes and Javascript objects. Enjoy your coding!
+      
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+    </article>
+  </main>
+  <footer>
+    <p>Monday January 4th, 2016</p>
+  </footer>
+</body>
+</html>
