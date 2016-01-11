@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/cheat-sheet.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/font-awesome/css/font-awesome.min.css">
+	<title>Javascript Objects</title>
+</head>
+
+<body>
+	<header>
+		<h1>Javascript Objects Cheat Sheet</h1>
+		<p>In JavaScript, objects can be seen as a collection of properties. With the object literal syntax, a limited set of properties are initialized; then properties can be added and removed. Property values can be values of any type, including other objects, which enables building complex data structures. Properties are identified using key values. A key value is either a String or a Symbol value</p>
+	</header>
+	<section class="column-1">
+		<article>
+			<h2>Object Literals</h2>
+			<p>An object literal is a list of zero or more pairs of property names and associated values of an object, enclosed in curly braces ({}).</p>
+			<p>The following is an example of an object literal. The first element of the car object defines a property, myCar, and assigns to it a new string, "Saturn"; the second element, the getCar property, is immediately assigned the result of invoking the function (carTypes("Honda")); the third element, the special property, uses an existing variable (sales).</p>
+			<details>
+				<summary><code>var sales = "Toyota";<br>
+
+					function carTypes(name) {<br>
+					if (name === "Honda") {<br>
+					return name;<br>
+				} else {<br>
+				return "Sorry, we don't sell " + name + ".";<br>
+			}<br>
+		}<br>
+
+		var car = { myCar: "Saturn", getCar: carTypes("Honda"), special: sales };<br>
+
+		console.log(car.myCar);   // Saturn<br>
+		console.log(car.getCar);  // Honda<br>
+		console.log(car.special); // Toyota<br></code></summary>
+	</details>
+</article>
+<article>
+	<h2>Numeric and String literal</h2>
+	<p> You can use a numeric or string literal for the name of a property or nest an object inside another</p>
+	<p>The following illustrates an example using these options</p>
+	<details>
+		<summary><code>var car = { manyCars: {a: "Saab", "b": "Jeep"}, 7: "Mazda" };<br>
+
+			console.log(car.manyCars.b); // Jeep<br>
+			console.log(car[7]); // Mazda<br>
+		</summary>
+	</code>
+</details>
+
+</article>
+</section>
+<section class="column-2">
+	<article>
+		<h2>Object Definition</h2>
+		<p>You define and create an object with an object literal</p>
+		<p>The following illustrates an example</p>
+		<details>
+			<summary><code>var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}; or<br>
+				var person = {<br>
+				firstName:"John",<br>
+				lastName:"Doe",<br>
+				age:50,<br>
+				eyeColor:"blue"<br>
+			};<br>
+		</code>
+	</summary>
+</details>
+</article>
+<article>
+	<h2>Accessing Object Properties</h2>
+	<p>You can access Object properties using dot notation or bracket notation</p>
+	<p>The following illustrates an example of dot notation and bracket notation</p>
+	<details>
+		<summary><code>objectName.propertyName<br>
+			objectName["propertyName"]<br>
+		</code></summary>
+	</details>
+	<p>Some additional notes:</p>
+	<p>Dot notation only lets you access the explicit key name of a property.</p>
+	<p>You can’t use dot notation with variables (or numbers either).</p>
+	<p>JS evaluates the first complete expression with square brackets in a statement, runs toString() on it to convert it into a string and then uses that value for the next bracket expression, on down the line till it runs out of bracket expressions.</p>
+</article>
+</section>
+<footer>Information for cheat sheet was provided by JavaScript documentation,W3 Schools and medium <a href="https://medium.com/@prufrock123/js-dot-notation-vs-bracket-notation-797c4e34f01d#.wtcbr1wal">article</a>
+</footer>
+</body>
+</html>
